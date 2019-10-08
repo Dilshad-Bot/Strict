@@ -1,0 +1,401 @@
+/*<< Global Css >>*/
+
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: 'Lato',san-serif;
+	}
+
+	.container{
+		width: 1140px;
+		margin: 0 auto;
+	}
+
+	span{
+
+		text-transform: uppercase;
+
+	}
+
+
+/*<< Nav-bar Section >>*/
+
+	.nav-bar{
+		padding: 1.2% 0;
+		background-color: hsla(0, 100%, 100%, 1);
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+		box-shadow: 0 2px 5px #b0b8c7;
+	}
+
+	.nav-bar .logo{
+    	float: left;
+    	display: inline;
+	}
+
+	.nav-bar .logo img{
+
+		width: 70%;
+
+	}
+
+	.nav-bar .menu{
+    	width: 100%;
+	}
+
+	.nav-bar .menu a{
+		float: right;
+		display: block;
+		color: #15a4fa;
+		text-align: center;
+		padding: 0% 2%;
+		text-decoration: none;
+		box-sizing: border-box;
+		font-size: 17px;
+		transition: all 0.25s linear;
+	}
+
+	.nav-bar .menu a:hover{
+		background-color: #15a4fa;
+		color: #fff;
+		padding: 1% 2%;
+		border-radius: 5px;
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		box-shadow: 0px 2px 2px #a0a0a0;
+	}
+
+
+/*<< Banner Section >>*/
+
+	.banner{
+		background: url(../images/banner.png);
+		background-size: cover;
+		background-position: center;
+		min-height: 640px;
+		position: relative;
+	}
+	.banner-text{
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+    	text-align: center;
+	}
+
+	.banner-text h1{
+
+    	color: #fff;
+    	text-transform: uppercase;
+    	font-size: 95px;
+    	margin-bottom: 6px;
+
+	}
+
+	.banner-text .blueline{
+    	height: 2px;
+    	background: #15a4fa;
+    	width: 500px;
+
+	}
+
+	.banner-text p{
+
+    	color: #fff;
+    	line-height: 5;
+    	margin-bottom: 40px;
+	
+	}
+
+
+	.banner-text .btn{
+	
+    	text-decoration: none;
+    	color: #fff;
+    	border: 1px solid #15a4fa;
+    	padding: 15px 35px;
+    	border-radius: 5px;
+    	transition: all 0.25s linear;
+	
+	}
+
+	.banner-text .btn:hover{
+		background-color: #15a4fa;
+		padding: 20px 40px;
+		font-size: 18px;
+	}
+
+	.arrow{
+		position: absolute;
+		left: 50%;
+		bottom: 6%;
+		transition: all 0.3s linear;
+		padding: 2px 2px;
+	}
+
+	.arrow:hover{
+		bottom: 4%;
+	}
+
+
+/*<< Description Section >>*/
+
+	.description{
+
+    	background: #f6f9f9;
+    	text-align: center;
+    	padding: 4% 7%;
+
+	}
+
+	.description h2{
+    	font-size: 35px;
+    	margin-bottom: 15px;
+   		color: #2d3950;
+    	font-weight: 400;
+	}
+
+	.description p{
+		line-height: 1.8;
+		color: #999;
+		padding: 0 10%;
+		font-size: 17px;
+	}
+
+
+/*<< Features Section >>*/
+
+	.features{
+    	padding: 4% 0;
+    	float: left;
+    	width: 100%;
+	}
+
+	.features .img{
+		width: 33.33%;
+		float: left;
+		text-align: center;
+		padding: 21px;
+		box-sizing: border-box;
+	}
+
+	.features .img h4{
+    	color: #2d3950;
+    	padding: 4% 0;
+    	font-weight: 400;
+	}
+
+	.features .img p{
+		color: #999;
+		line-height: 1.5;
+		font-size: 17px;
+	}
+
+
+/*<< Gallery Section >>*/
+
+	.gallery{
+		float: left;
+		width: 100%;
+		background: #f6f9f9;
+		padding: 2% 0;
+		padding-bottom: 4%;
+	}
+
+	.showcase{
+    	text-align: center;
+    	margin: 6% 0;
+    	margin-top: 3%;
+	}
+
+	.showcase h4{
+    	font-weight: 400;
+    	font-size: 35px;
+    	color: #2d3950;
+	}
+
+	.showcase p{
+    	color: #999;
+    	font-size: 17px;
+   		margin-top: 1.5%;
+	}
+
+	.gallery-images{
+    	width: 100%;
+    	float: left;
+	}
+
+	.gallery-images .pics{
+		width: 100%;
+	}
+
+	.gallery-image1, .gallery-image2,  .gallery-image3, .gallery-image4, .gallery-image5, .gallery-image6{
+    	position: relative;
+    	float: left;
+    	width: 32%;
+    	margin: 7px;
+	}
+
+	.hover1, .hover2, .hover3, .hover4, .hover5, .hover6{
+    	position: absolute;
+    	background: hsla(203, 84%, 52%, 0.65);
+    	width: 100%;
+    	height: 100%;
+    	border-radius: 4px;
+    	top: 0;
+    	left: 0;
+    	opacity: 0;
+    	transition: all 0.25s linear;
+	}
+
+	.gallery-image1:hover .hover1, .gallery-image2:hover .hover2,  .gallery-image3:hover .hover3, .gallery-image4:hover .hover4, .gallery-image5:hover .hover5, .gallery-image6:hover .hover6{
+		opacity: 1;
+	}
+
+
+	.hover1 ul, .hover2 ul, .hover3 ul, .hover4 ul, .hover5 ul, .hover6 ul{
+    	list-style: none;
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	transform: translate(-50%, -50%);
+	}
+
+	.hover1 ul li, .hover2 ul li, .hover3 ul li, .hover4 ul li, .hover5 ul li, .hover6 ul li{
+    	display: inline-block;
+	}
+
+	.hover1 ul li a img, .hover2 ul li a img, .hover3 ul li a img, .hover4 ul li a img, .hover5 ul li a img, .hover6 ul li a img{
+		width: 100%;
+		transition: all 0.25s linear;
+	}
+
+	.hover1 ul li a img:hover, .hover2 ul li a img:hover, .hover3 ul li a img:hover, .hover4 ul li a img:hover, .hover5 ul li a img:hover, .hover6 ul li a img:hover{
+		width: 110%;
+		background-color: #15a4fa;
+		box-shadow: 2px 2px 5px #5698d0;
+	}
+
+	
+/*<< Subscription Section >>*/
+
+	.subscription{
+    	float: left;
+    	width: 100%;
+    	padding: 4% 0;
+        background: linear-gradient(rgba(45, 57, 80, .7), rgba(45, 57, 80, .7)) , url(../images/newsletter-bg.png);
+    	background-size: cover;
+    	background-position: center;
+	}
+
+	.subs-header{
+    	text-align: center;
+    	margin: 0 auto;
+    	margin-bottom: 4%;
+	}
+
+	.subs-header h4{
+    	font-size: 41px;
+    	font-weight: 400;
+    	color: #fff;
+	}
+
+	.subs-header p{
+    	font-size: 14px;
+    	color: #999;
+    	line-height: 2;
+	}
+
+	.subscription form{
+    	width: 50%;
+    	margin: 0 auto;
+	}
+
+	.subscription form input[type="text"],
+	.subscription form input[type="email"],
+	.subscription form textarea{
+    	width: 100%;
+    	background: transparent;
+    	border: 1px solid #999;
+    	border-radius: 3px;
+    	padding: 4%;
+    	margin: 2%;
+    	font-size: 15px;
+    	outline: 0;
+    	box-sizing: border-box;
+    	color: #fff;
+	}
+
+	.subscription form input[type="text"]:hover,
+	.subscription form input[type="email"]:hover,
+	.subscription form textarea:hover{
+		border: 1px solid #1fa8fa;
+	}
+
+	.subscription form input[type="text"]:focus,
+	.subscription form input[type="email"]:focus,
+	.subscription form textarea:focus{
+		border: 1px solid #1fa8fa;
+	}
+
+	.subscription form input[type="checkbox"]{
+		width: 6%;
+		margin: 0 0;
+		box-sizing: border-box;
+	}
+
+	.subscription form p{
+    	display: inline;
+    	color: #fff;
+    	font-size: 14px;
+	}
+
+	.subscription form input[type="button"]{
+    	float: right;
+    	background: transparent;
+    	border: 1px solid #15a4fa;
+    	color: #fff;
+    	padding: 2% 7%;
+    	margin-right: -2%;
+    	border-radius: 3px;
+    	transition: all 0.25s linear;
+	}
+
+	.subscription form input[type="button"]:hover{
+		background-color: #15a4fa;
+	}
+
+
+/*<< Footer Section >>*/
+
+	.footer{
+    	float: left;
+    	width: 100%;
+    	background-color: #f6f9f9;
+	}
+
+	.copyrights{
+    	float: left;
+    	padding: 2%;
+	}
+
+	.copyrights p{
+    	box-sizing: border-box;
+    	display: inline;
+    	margin-top: 6%;
+	}
+
+	.support{
+    	float: right;
+    	margin: 0 .3%;
+    	margin-top: 1%;
+    	transition: all 0.25s linear;
+	}
+
+	.support:hover{
+		border-radius: 2px;
+		background: #9cbed2e8;
+		padding-right: 4px;
+	}
